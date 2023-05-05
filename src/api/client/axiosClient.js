@@ -30,7 +30,7 @@ axios.interceptors.response.use(
     // This will only logs the response, which are using this axios instance.
     const responseFrom = (response?.config?.baseURL ?? '') + (response?.config?.url ?? '');
 
-    console.log(`%c Response from ${responseFrom}: \n`, consoleStyle, response);
+    // console.log(`%c Response from ${responseFrom}: \n`, consoleStyle, response);
 
     return response
   },

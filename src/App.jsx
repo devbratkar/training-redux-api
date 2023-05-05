@@ -1,17 +1,15 @@
 import './App.css';
 
-import { getAllPosts, getAllPostsUsingCreate, getAllPostsUsingRequest } from './api/posts';
-
-import { useEffect } from 'react';
+import { AxiosPage, ReduxPage } from './pages';
 
 function App() {
-  useEffect(() => {
-    getAllPosts();
-    getAllPostsUsingCreate();
-    getAllPostsUsingRequest();
-  }, [])
-
-  return <>React - Redux Toolkit and API Integration</>;
+  return <>
+    <h1>React - Redux Toolkit and API Integration</h1>
+    <div className='seperate'>
+      <ReduxPage />
+      <AxiosPage />
+    </div>
+  </>;
 }
 
 export default App;
